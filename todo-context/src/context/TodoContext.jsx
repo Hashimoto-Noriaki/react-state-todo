@@ -1,7 +1,9 @@
 import React, { createContext, useState } from 'react';
 
+// Contextの作成
 export const TodoContext = createContext();
 
+// Providerコンポーネント
 export const TodoProvider = ({ children }) => {
   const [todos, setTodos] = useState([]);
 
